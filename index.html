@@ -28,61 +28,72 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
+    font-family: Arial, sans-serif;
     background:#111;
-    color:#eee;
+    color:white;
     line-height:1.6;
 }
 
 header{
-    background:linear-gradient(90deg,#8b0000,#1a1a1a);
-    padding:40px;
+    background:#8b0000;
     text-align:center;
+    padding:30px;
 }
 
 header h1{
-    font-size:3em;
-}
-
-header p{
-    margin-top:10px;
-    color:#ddd;
-}
-
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:40px auto;
-}
-
-.card{
-    background:#1d1d1d;
-    margin-bottom:25px;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 0 15px rgba(255,0,0,.15);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:scale(1.02);
-    box-shadow:0 0 20px rgba(255,0,0,.4);
-}
-
-.card h2{
-    color:#ff4d4d;
     margin-bottom:10px;
 }
 
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff4d4d;
+}
+
+section{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.filme{
+    background:#1d1d1d;
+    margin-bottom:25px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.filme img{
+    width:220px;
+    border-radius:10px;
+    margin:15px 0;
+    transition:0.3s;
+}
+
+.filme img:hover{
+    transform:scale(1.05);
+}
+
 footer{
-    background:#000;
+    background:#8b0000;
     text-align:center;
     padding:20px;
-    margin-top:40px;
-    color:#999;
+    margin-top:30px;
 }
 </style>
 
@@ -91,57 +102,89 @@ footer{
 
 <header>
 <h1>🎬 Melhores Filmes de Terror</h1>
-<p>Uma seleção para quem gosta de suspense, tensão e alguns bons sustos.</p>
+<p>Esse é um site simples sobre alguns filmes de terror que eu mais gosto.</p>
 </header>
 
-<div class="container">
+<nav>
+<a href="#filmes">Filmes</a>
+<a href="#opiniao">Minha Opinião</a>
+</nav>
 
-<div class="card">
-<h2>1. O Iluminado (1980)</h2>
+<section id="filmes">
+
+<div class="filme">
+<h2>1. Invocação do Mal</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Conjuring_poster.jpg" alt="Invocação do Mal">
+
 <p>
-Um clássico dirigido por Stanley Kubrick. A história acompanha uma família isolada em um hotel durante o inverno, onde acontecimentos cada vez mais estranhos começam a afetar a mente do pai. É um filme que aposta mais na tensão psicológica do que nos sustos fáceis.
+Esse é o meu favorito. Tem vários sustos e a história é muito legal.
+Mesmo assistindo mais de uma vez ainda dá um pouco de medo.
 </p>
 </div>
 
-<div class="card">
-<h2>2. Hereditário (2018)</h2>
+<div class="filme">
+<h2>2. It: A Coisa</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg" alt="It: A Coisa">
+
 <p>
-Misturando drama familiar e horror sobrenatural, Hereditário constrói uma atmosfera pesada do começo ao fim. É considerado por muitos um dos melhores filmes de terror dos últimos anos.
+O Pennywise é um dos personagens mais assustadores dos filmes de terror.
+Também gostei da amizade entre os personagens.
 </p>
 </div>
 
-<div class="card">
-<h2>3. Invocação do Mal (2013)</h2>
+<div class="filme">
+<h2>3. O Exorcista</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/The_Exorcist.jpg" alt="O Exorcista">
+
 <p>
-Baseado em casos investigados pelos demonologistas Ed e Lorraine Warren, o filme entrega suspense, sustos bem construídos e personagens marcantes.
+Mesmo sendo um filme antigo, muita gente ainda fala dele.
+Tem cenas que ficaram famosas até hoje.
 </p>
 </div>
 
-<div class="card">
-<h2>4. O Exorcista (1973)</h2>
+<div class="filme">
+<h2>4. Hereditário</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png" alt="Hereditário">
+
 <p>
-Mesmo décadas após seu lançamento, continua sendo uma das maiores referências do gênero. Sua influência pode ser vista em inúmeros filmes de terror modernos.
+Esse filme não depende só de sustos.
+Ele cria um clima estranho do começo ao fim e deixa a história bem tensa.
 </p>
 </div>
 
-<div class="card">
-<h2>5. Corra! (2017)</h2>
+<div class="filme">
+<h2>5. A Freira</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg" alt="A Freira">
+
 <p>
-Mais do que um filme de terror, Corra! mistura suspense e crítica social de forma inteligente. O roteiro prende a atenção do início ao fim.
+Achei esse filme bem legal porque tem muitos momentos de suspense.
+A personagem principal dá bastante medo.
 </p>
 </div>
 
-<div class="card">
-<h2>Minha opinião</h2>
-<p>
-Se eu tivesse que recomendar apenas um para quem está começando a explorar o gênero, seria <strong>Hereditário</strong>. Ele consegue equilibrar uma boa história, atuações fortes e cenas realmente impactantes. Já para quem prefere os clássicos, <strong>O Iluminado</strong> e <strong>O Exorcista</strong> são escolhas obrigatórias.
-</p>
-</div>
+</section>
 
-</div>
+<section id="opiniao">
+
+<h2>💭 Minha Opinião</h2>
+
+<br>
+
+<p>
+Eu gosto de filmes de terror porque eles deixam o filme mais emocionante.
+Às vezes eu levo um susto, mas acho divertido assistir com os amigos ou com a família.
+Meu favorito é <strong>Invocação do Mal</strong>, porque tem uma história muito boa e cenas que prendem a atenção.
+</p>
+
+</section>
 
 <footer>
-<p>Site desenvolvido em HTML e CSS • Projeto para GitHub • 2026</p>
+<p>Site feito em HTML para um trabalho escolar.</p>
 </footer>
 
 </body>
